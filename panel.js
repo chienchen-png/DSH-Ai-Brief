@@ -1,5 +1,5 @@
 // AI 新闻推送面板：顶部三张状态卡（早报 / 午报 / 晚报），下方四个分页（早报 / 午报 / 晚报 / 共享）。
-// 契约：new Function('React','h','ui','call', src) 执行，最后 return 一个组件。
+// 契约：源码在受限作用域执行（注入 React/h/ui/call），最后 return 一个组件。
 return function NewsPushPanel(props) {
   const settings = props.settings || {}
   const save = props.save
